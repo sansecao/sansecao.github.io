@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue项目webpack升级笔记 | shirley&#39; blog</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    
+    <meta name="description" content="Stay hungry, Stay foolish!">
+    
+    <link rel="preload" href="/assets/css/0.styles.f1147152.css" as="style"><link rel="preload" href="/assets/js/app.2b3c16d9.js" as="script"><link rel="preload" href="/assets/js/2.4bbb4ca5.js" as="script"><link rel="preload" href="/assets/js/109.83a54884.js" as="script"><link rel="preload" href="/assets/js/32.3194c25a.js" as="script"><link rel="prefetch" href="/assets/js/10.40a72b24.js"><link rel="prefetch" href="/assets/js/100.e2d86fce.js"><link rel="prefetch" href="/assets/js/101.87d96723.js"><link rel="prefetch" href="/assets/js/102.45425e42.js"><link rel="prefetch" href="/assets/js/103.6af0e127.js"><link rel="prefetch" href="/assets/js/104.b4ab661c.js"><link rel="prefetch" href="/assets/js/105.5b617b43.js"><link rel="prefetch" href="/assets/js/106.ea384279.js"><link rel="prefetch" href="/assets/js/107.8125dc24.js"><link rel="prefetch" href="/assets/js/108.a18789e8.js"><link rel="prefetch" href="/assets/js/11.cba0d063.js"><link rel="prefetch" href="/assets/js/12.b586c683.js"><link rel="prefetch" href="/assets/js/13.95964f08.js"><link rel="prefetch" href="/assets/js/14.c4135cc5.js"><link rel="prefetch" href="/assets/js/15.759a9198.js"><link rel="prefetch" href="/assets/js/16.59652573.js"><link rel="prefetch" href="/assets/js/17.61dcc6c1.js"><link rel="prefetch" href="/assets/js/18.68f43013.js"><link rel="prefetch" href="/assets/js/19.4a5eb9e0.js"><link rel="prefetch" href="/assets/js/20.75adf05c.js"><link rel="prefetch" href="/assets/js/21.b6833a90.js"><link rel="prefetch" href="/assets/js/22.90f21f7c.js"><link rel="prefetch" href="/assets/js/23.bc860dea.js"><link rel="prefetch" href="/assets/js/24.52386a5a.js"><link rel="prefetch" href="/assets/js/25.a0cb6fb9.js"><link rel="prefetch" href="/assets/js/26.511c5795.js"><link rel="prefetch" href="/assets/js/27.56ab9bfa.js"><link rel="prefetch" href="/assets/js/28.19378e6f.js"><link rel="prefetch" href="/assets/js/29.9d9ad706.js"><link rel="prefetch" href="/assets/js/3.7f35d7f4.js"><link rel="prefetch" href="/assets/js/30.2496cc1d.js"><link rel="prefetch" href="/assets/js/31.4ec1976d.js"><link rel="prefetch" href="/assets/js/33.4dd0ea1f.js"><link rel="prefetch" href="/assets/js/34.ba80214e.js"><link rel="prefetch" href="/assets/js/35.a38f77bd.js"><link rel="prefetch" href="/assets/js/36.e27e57ff.js"><link rel="prefetch" href="/assets/js/37.48a59729.js"><link rel="prefetch" href="/assets/js/38.cb6d26cb.js"><link rel="prefetch" href="/assets/js/39.3f26aea9.js"><link rel="prefetch" href="/assets/js/4.12f5ba8e.js"><link rel="prefetch" href="/assets/js/40.1418b91e.js"><link rel="prefetch" href="/assets/js/41.92b09304.js"><link rel="prefetch" href="/assets/js/42.903e83f0.js"><link rel="prefetch" href="/assets/js/43.755dd2d1.js"><link rel="prefetch" href="/assets/js/44.422c6a31.js"><link rel="prefetch" href="/assets/js/45.98f773d9.js"><link rel="prefetch" href="/assets/js/46.21568ddd.js"><link rel="prefetch" href="/assets/js/47.af720435.js"><link rel="prefetch" href="/assets/js/48.57441751.js"><link rel="prefetch" href="/assets/js/49.bc061280.js"><link rel="prefetch" href="/assets/js/5.6914d8cd.js"><link rel="prefetch" href="/assets/js/50.5d0486bf.js"><link rel="prefetch" href="/assets/js/51.e9e4bbab.js"><link rel="prefetch" href="/assets/js/52.714d60d4.js"><link rel="prefetch" href="/assets/js/53.01b53e3b.js"><link rel="prefetch" href="/assets/js/54.57b2a2d0.js"><link rel="prefetch" href="/assets/js/55.e2fee879.js"><link rel="prefetch" href="/assets/js/56.80e20210.js"><link rel="prefetch" href="/assets/js/57.4f0588e3.js"><link rel="prefetch" href="/assets/js/58.d578fa6b.js"><link rel="prefetch" href="/assets/js/59.10fb9f7b.js"><link rel="prefetch" href="/assets/js/6.14ed718f.js"><link rel="prefetch" href="/assets/js/60.11bb2c9c.js"><link rel="prefetch" href="/assets/js/61.0d11383a.js"><link rel="prefetch" href="/assets/js/62.1efb443f.js"><link rel="prefetch" href="/assets/js/63.e245d2cc.js"><link rel="prefetch" href="/assets/js/64.de76c297.js"><link rel="prefetch" href="/assets/js/65.271eea5c.js"><link rel="prefetch" href="/assets/js/66.04fea32b.js"><link rel="prefetch" href="/assets/js/67.13f49c25.js"><link rel="prefetch" href="/assets/js/68.85f7eee2.js"><link rel="prefetch" href="/assets/js/69.f3c52202.js"><link rel="prefetch" href="/assets/js/7.093c7dfd.js"><link rel="prefetch" href="/assets/js/70.b759c9c6.js"><link rel="prefetch" href="/assets/js/71.3c4ff64d.js"><link rel="prefetch" href="/assets/js/72.56f01204.js"><link rel="prefetch" href="/assets/js/73.df93a151.js"><link rel="prefetch" href="/assets/js/74.0a5629eb.js"><link rel="prefetch" href="/assets/js/75.a4e4581d.js"><link rel="prefetch" href="/assets/js/76.bd44f6a7.js"><link rel="prefetch" href="/assets/js/77.55317c5e.js"><link rel="prefetch" href="/assets/js/78.06d92cbc.js"><link rel="prefetch" href="/assets/js/79.c19a4ae3.js"><link rel="prefetch" href="/assets/js/8.03fdccde.js"><link rel="prefetch" href="/assets/js/80.283e9c1c.js"><link rel="prefetch" href="/assets/js/81.b5b11067.js"><link rel="prefetch" href="/assets/js/82.7e51ba1c.js"><link rel="prefetch" href="/assets/js/83.61351b1c.js"><link rel="prefetch" href="/assets/js/84.319edb79.js"><link rel="prefetch" href="/assets/js/85.22d7e042.js"><link rel="prefetch" href="/assets/js/86.c92c69db.js"><link rel="prefetch" href="/assets/js/87.306caa13.js"><link rel="prefetch" href="/assets/js/88.89b971eb.js"><link rel="prefetch" href="/assets/js/89.e1b69329.js"><link rel="prefetch" href="/assets/js/9.d4cdc2c8.js"><link rel="prefetch" href="/assets/js/90.0dcee3bb.js"><link rel="prefetch" href="/assets/js/91.1e4dbd51.js"><link rel="prefetch" href="/assets/js/92.b4b58e03.js"><link rel="prefetch" href="/assets/js/93.83f15204.js"><link rel="prefetch" href="/assets/js/94.8c1185ea.js"><link rel="prefetch" href="/assets/js/95.c60baccb.js"><link rel="prefetch" href="/assets/js/96.a35a69b4.js"><link rel="prefetch" href="/assets/js/97.b4801ac2.js"><link rel="prefetch" href="/assets/js/98.e3b41fb8.js"><link rel="prefetch" href="/assets/js/99.9663b909.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f1147152.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">shirley' blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Posts" class="dropdown-title"><span class="title">Posts</span> <span class="arrow down"></span></button> <button type="button" aria-label="Posts" class="mobile-dropdown-title"><span class="title">Posts</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/posts/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/posts/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/posts/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/posts/webpack/" class="nav-link router-link-active">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/posts/ES6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/posts/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/posts/nodeJS/" class="nav-link">
+  nodeJS
+</a></li><li class="dropdown-item"><!----> <a href="/posts/MySql/" class="nav-link">
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/posts/TypeScript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/posts/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/posts/internet/" class="nav-link">
+  internet
+</a></li><li class="dropdown-item"><!----> <a href="/posts/MicroFE/" class="nav-link">
+  MicroFrontends
+</a></li><li class="dropdown-item"><!----> <a href="/posts/tool/" class="nav-link">
+  tool
+</a></li><li class="dropdown-item"><!----> <a href="/posts/question/" class="nav-link">
+  question
+</a></li><li class="dropdown-item"><!----> <a href="/posts/Browser/" class="nav-link">
+  浏览器
+</a></li></ul></div></div><div class="nav-item"><a href="/essay/" class="nav-link">
+  Essay
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Posts" class="dropdown-title"><span class="title">Posts</span> <span class="arrow down"></span></button> <button type="button" aria-label="Posts" class="mobile-dropdown-title"><span class="title">Posts</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/posts/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/posts/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/posts/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/posts/webpack/" class="nav-link router-link-active">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/posts/ES6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/posts/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/posts/nodeJS/" class="nav-link">
+  nodeJS
+</a></li><li class="dropdown-item"><!----> <a href="/posts/MySql/" class="nav-link">
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/posts/TypeScript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/posts/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/posts/internet/" class="nav-link">
+  internet
+</a></li><li class="dropdown-item"><!----> <a href="/posts/MicroFE/" class="nav-link">
+  MicroFrontends
+</a></li><li class="dropdown-item"><!----> <a href="/posts/tool/" class="nav-link">
+  tool
+</a></li><li class="dropdown-item"><!----> <a href="/posts/question/" class="nav-link">
+  question
+</a></li><li class="dropdown-item"><!----> <a href="/posts/Browser/" class="nav-link">
+  浏览器
+</a></li></ul></div></div><div class="nav-item"><a href="/essay/" class="nav-link">
+  Essay
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>webpack</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/posts/webpack/" aria-current="page" class="sidebar-link">webpack</a></li><li><a href="/posts/webpack/loader.html" class="sidebar-link">loader</a></li><li><a href="/posts/webpack/dev-server.html" class="sidebar-link">dev-server</a></li><li><a href="/posts/webpack/eslint.html" class="sidebar-link">eslint</a></li><li><a href="/posts/webpack/vue项目webpack升级笔记.html" class="active sidebar-link">vue项目webpack升级笔记</a></li><li><a href="/posts/webpack/git提交.html" class="sidebar-link">git提交规范</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>ES6</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>nodeJS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>mysql</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>TypeScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>react</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>internet</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>MicroFrontends</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>tool</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>question</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue项目webpack升级笔记"><a href="#vue项目webpack升级笔记" class="header-anchor">#</a> vue项目webpack升级笔记</h1> <h2 id="webpack4-0新增的mode-分为development和production"><a href="#webpack4-0新增的mode-分为development和production" class="header-anchor">#</a> webpack4.0新增的mode,分为development和production</h2> <p>通过mode, 你可以轻松设置打包环境。如果你将 <code>mode</code> 设置成 <code>development</code>，你将获得最好的开发阶段体验。这得益于webpack针对开发模式提供的特性：</p> <ul><li>浏览器调试工具</li> <li>注释、开发阶段的详细错误日志和提示</li> <li>快速和优化的增量构建机制</li></ul> <p>如果你将mode设置成了 production, webpack将会专注项目的部署，包括以下特性：</p> <ul><li>开启所有的优化代码</li> <li>更小的bundle大小</li> <li>去除掉只在开发阶段运行的代码</li> <li>Scope hoisting和Tree-shaking</li></ul> <h2 id="什么是scope-hoisting"><a href="#什么是scope-hoisting" class="header-anchor">#</a> 什么是Scope hoisting</h2> <p>webpack 3.0新增的功能，又叫做“作用域提升”。目的是让打包出来的文件更小，运行更快。在webpack3.0中需要当做插件引入。在4.0后就是production模式默认带有的了。 参考地址<a href="https://zhuanlan.zhihu.com/p/27980441" target="_blank" rel="noopener noreferrer">https://zhuanlan.zhihu.com/p/27980441<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// webpack 3.0 config</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token keyword">new</span> <span class="token class-name">webpack<span class="token punctuation">.</span>optimize<span class="token punctuation">.</span>ModuleConcatenationPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>如何实现的呢?</p> <p>其实是在打包的时候，以前把多个模块打包成多个function,而采用了scope hoisting后，则将所有模块的代码按照引用顺序放在一个函数作用域里，然后适当的重命名一些变量以防止变量名冲突。这样的话，文件体积小了，运行代码的时候，创建的函数作用域比以前少了，开销随之就小了。</p> <h2 id="tree-shaking"><a href="#tree-shaking" class="header-anchor">#</a> Tree-shaking</h2> <p>Tree-shaking是在build的时候去掉多余的代码，在webpack 4.0的时候，在<code>package.json</code>增加<code>sideEffects</code>。在4.39.1版本，mode: production的时候，就是没有配置sideEffects，项目中的代码也会触发tree-shaking（可能是文档还没有更新）。</p> <h2 id="process-env-node-env不能在webpack的config中使用"><a href="#process-env-node-env不能在webpack的config中使用" class="header-anchor">#</a> process.env.NODE_ENV不能在webpack的config中使用</h2> <p>DefinePlugin 在原始的源码中执行查找和替换操作，在导入的代码中，任何出现 process.env.NODE_ENV的地方都会被替换为&quot;production&quot;。</p> <p>也就是说，webpack config文件中定义的变量：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">new</span> <span class="token class-name">webpack<span class="token punctuation">.</span>DefinePlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token string">'process.env.NODE_ENV'</span><span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token string">'production'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>是为了你将要打包的文件中用的。 那如何在webpack config文件中使用 process.env.NODE_ENV 呢？答案是corss-env</p> <h2 id="shim-预置依赖"><a href="#shim-预置依赖" class="header-anchor">#</a> shim 预置依赖</h2> <p>webpack compiler 能够识别遵循 ES2015 模块语法、CommonJS 或 AMD 规范编写的模块。然而，一些 third party(第三方库) 可能会引用一些全局依赖（例如 jQuery 中的 $）。因此这些 library 也可能会创建一些需要导出的全局变量。这些 &quot;broken modules(不符合规范的模块)&quot; 就是 shim(预置依赖) 发挥作用的地方。</p> <p>shim 另外一个极其有用的使用场景就是：当你希望 polyfill 扩展浏览器能力，来支持到更多用户时。在这种情况下，你可能只是想要将这些 polyfills 提供给需要修补(patch)的浏览器（也就是实现按需加载）。</p> <p>babel-preset-env package 通过 browserslist 来转译那些你浏览器中不支持的特性。这个 preset 使用 useBuiltIns 选项，默认值是 false，这种方式可以将全局 babel-polyfill 导入，改进为更细粒度的 import</p> <h2 id="minicssextractplugin"><a href="#minicssextractplugin" class="header-anchor">#</a> MiniCssExtractPlugin</h2> <p>MiniCssExtractPlugin是webpack4提供的把css从js中抽离成单独文件的插件。对于js中的backgroundImage路径问题，可以使用publicPath配置扩展路径来处理。</p> <h2 id="html-webpack-plugin"><a href="#html-webpack-plugin" class="header-anchor">#</a> html-webpack-plugin</h2> <p>html-webpack-plugin是创建一个html文件去引用webpack生成的文件。一般开发环境的index.html就是用的这个生成的。有参数template，可以指定对应的模板。</p> <h2 id="copy-webpack-plugin"><a href="#copy-webpack-plugin" class="header-anchor">#</a> copy-webpack-plugin</h2> <p>开发的时候，写在src外面的static，就是通过<code>copy-webpack-plugin</code>插件将其复制到build的结果目录里面去的。</p> <h2 id="babel-7"><a href="#babel-7" class="header-anchor">#</a> babel 7</h2> <p>从 Babel v7 开始，所有针对处于标准提案阶段的功能所编写的预设（stage preset）都已被弃用。也就是babel默认直接处理stage-0</p> <p>@babel/preset-env， 动态的处理js语法问题，利用<code>useBuiltIns</code>可以根据不同的浏览器环境，按需引入polyfill。 <code>target</code>属性用来告诉babel所需要支持的浏览器。其写法同browserslist</p> <div id="gitalk-container" class="gitask"></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新时间:</span> <span class="time">1/15/2021, 8:30:05 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/posts/webpack/eslint.html" class="prev">
+        eslint
+      </a></span> <span class="next"><a href="/posts/webpack/git提交.html">
+        git提交规范
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.2b3c16d9.js" defer></script><script src="/assets/js/2.4bbb4ca5.js" defer></script><script src="/assets/js/109.83a54884.js" defer></script><script src="/assets/js/32.3194c25a.js" defer></script>
+  </body>
+</html>
